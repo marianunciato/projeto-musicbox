@@ -29,9 +29,6 @@ export const App =  () => {
                 <Item imageURL={imageURL}/>
                 <Item imageURL={imageURL}/>
                 <Item imageURL={imageURL}/>
-                <Item imageURL={imageURL}/>
-                <Item imageURL={imageURL}/>
-                <Item imageURL={imageURL}/>
             </div>
             
 
