@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
+import {MenuSidebar} from './components/MenuSidebar';
 import Item from './components/Item';
 import FileUpload from './components/FileUpload'
 import './App.css';
@@ -16,19 +16,21 @@ export const App =  () => {
     }
     
     return (
-        <div className='App flex w-100 justify-center'>
-            <Navbar />
-            <Sidebar />
+        <div className='App flex w-100 h-screen'>
+            <MenuSidebar/>
+            <div>
+                <Navbar />
+            </div>
             <div className='mainPage w-2/3 flex flex-wrap justify-center mt-28 place-content-evenly'>
-                {/* <FileUpload onFileSelect={handleFileSelect}/>
+                <FileUpload onFileSelect={handleFileSelect}/>
                 {isLoading && <p>Loading ...</p>}
-                {imageURL && <Item imageURL={imageURL}/>} */}
+                {imageURL && <Item imageURL={imageURL}/>}
+                {/* <Item imageURL={imageURL}/>
                 <Item imageURL={imageURL}/>
                 <Item imageURL={imageURL}/>
                 <Item imageURL={imageURL}/>
                 <Item imageURL={imageURL}/>
-                <Item imageURL={imageURL}/>
-                <Item imageURL={imageURL}/>
+                <Item imageURL={imageURL}/> */}
             </div>
             
 

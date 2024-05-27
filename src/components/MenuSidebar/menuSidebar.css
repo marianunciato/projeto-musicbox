@@ -1,0 +1,5 @@
+.outside-button {
+    top: 15px;
+    position: fixed;
+    left: calc(305px - 50px);
+}
