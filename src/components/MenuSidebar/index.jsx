@@ -34,8 +34,8 @@ export function MenuSidebar({text}) {
                     />
                     {expanded ?
                         <button onClick={() => setExpanded(prev => !prev)}
-                                className="p-1.5 mx-2 flex justify-center items-center outside-button rounded-lg z-10 text-white hover:bg-neutral-800">
-                            <span className='material-symbols-outlined'>menu</span>
+                                className="p-1.5 mx-2 flex justify-center items-center outside-button rounded-r-lg z-10 text-white bg-yellow-300">
+                            <span className='material-symbols-outlined text-black'>menu</span>
                         </button>
                         :
                         <button onClick={() => setExpanded((curr) => !curr)}
@@ -47,6 +47,22 @@ export function MenuSidebar({text}) {
                 <SidebarContext.Provider value={expanded}>
                     <MenuList/>
                 </SidebarContext.Provider>
+                <div className="border-t border-white/20 flex px-5 py-4 text-white">
+                    <div className='fotinha flex justify-center items-center'>
+                        <span className='material-symbols-outlined text-yellow-300'>account_circle</span>
+                    </div>
+                    <div
+                        className={`
+              flex justify-between items-center
+              overflow-hidden transition-all ${expanded ? "w-52 ml-3" : "w-0"}
+          `}
+                    >
+                        <div className="leading-4">
+                            <h4 className="font-semibold pb-1">David Bowie</h4>
+                            <span className="text-xs text-white/70">ziggystardust@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </aside>
     )

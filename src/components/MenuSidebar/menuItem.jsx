@@ -12,8 +12,8 @@ export function MenuItem({text, active, icon}) {
             group h-12 text-white
             ${
                 active
-                    ? "hover:bg-yellow-400 hover:text-black"
-                    : "hover:bg-yellow-400 hover:text-black"
+                    ? "hover:bg-yellow-300 hover:text-black"
+                    : "hover:bg-yellow-300 hover:text-black"
             }
         `}>
             {icon}

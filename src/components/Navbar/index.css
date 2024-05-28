@@ -1,0 +1,24 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+input {
+    text-transform: uppercase;
+}
+::-webkit-input-placeholder {
+    text-transform: initial;
+}
+:-moz-placeholder {
+    text-transform: initial;
+}
+::-moz-placeholder {
+    text-transform: initial;
+}
+
+:-ms-input-placeholder {
+    text-transform: initial;
+}
+
+input:focus {
+    outline: none;
+}

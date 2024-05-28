@@ -10,6 +10,8 @@ export const MenuList = () => {
                 <MenuItem icon={<span className='material-symbols-outlined'>radio</span>} text="Decoração"/>
                 <MenuItem icon={<span className='material-symbols-outlined'>album</span>} text="CD's e Vinís"/>
                 <MenuItem icon={<span className='material-symbols-outlined'>speaker</span>} text="Equipamentos de Som"/>
+                <MenuItem icon={<span className='material-symbols-outlined'>favorite</span>} text="Meus favoritos"/>
+                <MenuItem icon={<span className='material-symbols-outlined'>shopping_bag</span>} text="Minha sacola"/>
             </ul>
         </>
     )

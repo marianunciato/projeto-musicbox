@@ -16,24 +16,27 @@ export const App =  () => {
     }
     
     return (
-        <div className='App flex w-100 h-screen'>
+        <div className='App flex w-screen h-screen'>
             <MenuSidebar/>
-            <div>
+            <div className='meuDeus'>
                 <Navbar />
+                <div className='plmDs flex flex-wrap pt-24'>
+                    <Item imageURL={imageURL}/>
+                    <Item imageURL={imageURL}/>
+                    <Item imageURL={imageURL}/>
+                </div>
             </div>
-            <div className='mainPage w-2/3 flex flex-wrap justify-center mt-28 place-content-evenly'>
-                <FileUpload onFileSelect={handleFileSelect}/>
-                {isLoading && <p>Loading ...</p>}
-                {imageURL && <Item imageURL={imageURL}/>}
-                {/* <Item imageURL={imageURL}/>
-                <Item imageURL={imageURL}/>
-                <Item imageURL={imageURL}/>
-                <Item imageURL={imageURL}/>
-                <Item imageURL={imageURL}/>
-                <Item imageURL={imageURL}/> */}
-            </div>
-            
-
+            {/*<div className='mainPage w-2/3 flex flex-wrap justify-center mt-28 place-content-evenly'>*/}
+            {/*    <FileUpload onFileSelect={handleFileSelect}/>*/}
+            {/*    {isLoading && <p>Loading ...</p>}*/}
+            {/*    {imageURL && <Item imageURL={imageURL}/>}*/}
+            {/*    <Item imageURL={imageURL}/>*/}
+            {/*    <Item imageURL={imageURL}/>*/}
+            {/*    <Item imageURL={imageURL}/>*/}
+            {/*    <Item imageURL={imageURL}/>*/}
+            {/*    <Item imageURL={imageURL}/>*/}
+            {/*    <Item imageURL={imageURL}/>*/}
+            {/*</div>*/}
         </div>
     );
 };
