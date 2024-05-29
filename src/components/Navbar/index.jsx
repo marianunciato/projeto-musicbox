@@ -10,6 +10,7 @@ const Navbar = () => {
                     className='input py-3 px-6 0 flex rounded-full bg-white/20 focus:outline-none focus:border-2 focus:border-yellow-300 w-80'
                     placeholder='Pesquise aqui!'/>
                 <span className='material-symbols-outlined hover:text-yellow-300'>search</span>
+                <div>jfoenfcoefkjidspcosopcpśkevcp</div>
             </div>
         </nav>
     );
